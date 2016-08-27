@@ -575,4 +575,11 @@ function _ubb($_string) {
 	return $_string;
 }
 
+/**
+ * 建立一个调试时用的函数,内容随时改
+ */
+function _debug_all($aaa)
+{
+    echo $aaa . "---";
+}
 ?>

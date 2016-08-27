@@ -35,7 +35,7 @@ define('START_TIME', _time_now());
 //在需要时连接数据库
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PWD', 'localhost');
+define('DB_PWD', '');
 define('DB_NAME', 'liuyanban');
 define('DB_CHARSET', 'UTF8');
 if(IS_CONN) {
