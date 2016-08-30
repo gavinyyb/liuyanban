@@ -18,6 +18,7 @@ require dirname(__FILE__).'/include/common.inc.php';
 /*主题列表*/
 _init_page("SELECT top_id FROM topic WHERE reply_for=0", 10);
 $_sql = "SELECT top_id,top_title,top_type,top_readcount,top_replycount FROM topic WHERE reply_for=0 ORDER BY top_last_access_date DESC LIMIT {$GLOBALS['start_row']},{$GLOBALS['page_size']}";
+//SELECT top_id,top_title,top_type,top_readcount,top_replycount FROM topic WHERE reply_for=0 ORDER BY top_last_access_date DESC LIMIT 0,10
 $_result = mysql_query($_sql);
 
 /*最新图片*/
@@ -25,7 +26,7 @@ $_result = mysql_query($_sql);
 /*新进会员显示*/
 //获取本地xml文件中的数据
 $_data = _html_chars(_get_xml('new.xml'));
-
+//array(id=>27,username=>张怡静,sex=>女,face=>face/m65.jpg,email=>cathy.zh@foxmail.com
 ?>
 <!DOCTYPE html>
 <html>

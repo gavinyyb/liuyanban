@@ -303,7 +303,8 @@ function _confirm($_info) {
  */
 function _escape_string($_string) {
 	if(!GPC) {
-		return mysql_real_escape_string($_string);
+		//return mysql_real_escape_string($_string); 这函数需要先连接数据库,已被抛弃
+		return addslashes($_string);
 	}
 	return $_string;
 }
