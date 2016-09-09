@@ -108,7 +108,7 @@ if(isset($_GET['action']) && $_GET['action'] = 'register') {
 			</dd>
 			<dd>电子邮件：<input type="text" name="email" class="text"/> (*必填，6-40位)</dd>
 			<dd>验 证 码：<input type="text" name="code" class="text yzm"/>
-			<img id="code" alt="" src="code.php" />
+			<img id="code888" alt="" src="code.php" />
 			</dd>
 			<dd><input type="submit" class="submit" value="注册"/></dd>
 		</dl>	

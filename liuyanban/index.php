@@ -17,6 +17,7 @@ require dirname(__FILE__).'/include/common.inc.php';
 
 /*主题列表*/
 _init_page("SELECT top_id FROM topic WHERE reply_for=0", 10);
+
 $_sql = "SELECT top_id,top_title,top_type,top_readcount,top_replycount FROM topic WHERE reply_for=0 ORDER BY top_last_access_date DESC LIMIT {$GLOBALS['start_row']},{$GLOBALS['page_size']}";
 //SELECT top_id,top_title,top_type,top_readcount,top_replycount FROM topic WHERE reply_for=0 ORDER BY top_last_access_date DESC LIMIT 0,10
 $_result = mysql_query($_sql);

@@ -28,9 +28,9 @@ if(isset($_GET['action']) && $_GET['action'] == 'logout' && _is_login()) {
 			mysql_query($_sql);
 		}
 		mysql_close();		
-		_unset_login_cookies();
-		session_destroy(); //退出时清除所有的会话
-		_location('欢迎下次登录！', 'index.php');
+		_unset_login_cookies();                       //111
+		session_destroy(); //退出时清除所有的会话               //111
+		_location('欢迎下次登录！', 'index.php');       //111
 	} else {
 		mysql_free_result($_result);
 		mysql_close();
